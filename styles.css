@@ -1,0 +1,258 @@
+      :root {
+        --Green1: hsl(148, 38%, 91%);
+        --Green2: hsl(169, 82%, 27%);
+        --Red: hsl(0, 66%, 54%);
+        --White: hsl(0, 0%, 100%);
+        --Grey1: hsl(186, 15%, 59%);
+        --Grey2: hsl(187, 24%, 22%);
+      }
+      .attribution {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .attribution a {
+        color: var(--Green2);
+        font-weight: 700;
+      }
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-family: "Karla", sans-serif;
+        background-color: var(--Green1);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--White);
+        padding: 1.5rem;
+        width: 550px;
+        min-height: 550px;
+        border-radius: 1rem;
+      }
+      .entry {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 1.2rem 0;
+      }
+      .first {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        font-size: 0.8rem;
+        color: var(--Grey2);
+      }
+      .last {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        font-size: 0.8rem;
+        color: var(--Grey2);
+      }
+      #first-name {
+        width: 243px;
+        height: 30px;
+        border: 1px solid grey;
+        border-radius: 0.2rem;
+        padding: 0.5rem;
+      }
+      #first-name:hover {
+        border: 2px solid var(--Green2);
+      }
+      #last-name {
+        width: 243px;
+        height: 30px;
+        border: 1px solid grey;
+        border-radius: 0.2rem;
+        padding: 0.5rem;
+      }
+      #last-name:hover {
+        border: 2px solid var(--Green2);
+      }
+      .email {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        margin-bottom: 1.2rem;
+        font-size: 0.8rem;
+        color: var(--Grey2);
+      }
+      #email {
+        width: 500px;
+        height: 30px;
+        border: 1px solid grey;
+        border-radius: 0.2rem;
+        padding: 0.5rem;
+      }
+      #email:hover {
+        border: 2px solid var(--Green2);
+      }
+      .query {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        margin-bottom: 1.2rem;
+        font-size: 0.8rem;
+        color: var(--Grey2);
+      }
+      .radio-selects {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+      .radio-select {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid grey;
+        border-radius: 0.2rem;
+        padding: 0.5rem 1rem;
+        width: 250px;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+      }
+      .radio-select:hover {
+        border: 2px solid var(--Green2);
+        background-color: var(--Green1);
+      }
+      .radio-select:has(input:checked) {
+        background-color: var(--Green1);
+      }
+      .text-message {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        margin-bottom: 1.2rem;
+        font-size: 0.8rem;
+        color: var(--Grey2);
+      }
+      #message {
+        height: 80px;
+        border: 1px solid grey;
+        border-radius: 0.2rem;
+        padding: 0.5rem;
+      }
+      #message:hover {
+        border: 2px solid var(--Green2);
+      }
+      .checkbox {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+        font-size: 0.8rem;
+        color: var(--Grey2);
+      }
+      input[type="radio"]:checked {
+        accent-color: var(--Green2);
+      }
+      input[type="checkbox"]:checked {
+        accent-color: var(--Green2);
+      }
+      .button {
+        border: none;
+        width: 500px;
+        height: 50px;
+        background-color: var(--Green2);
+        color: var(--White);
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+      small {
+        display: none;
+      }
+      input.error,
+      textarea.error {
+        border: 1px solid var(--Red) !important;
+      }
+      small.error {
+        display: block;
+        color: var(--Red);
+      }
+      .success-msg {
+        display: none;
+        background-color: var(--Grey2);
+        color: var(--White);
+        padding: 1.3rem 1.2rem;
+        border-radius: 1rem;
+        margin: 0 auto;
+        width: 360px;
+        height: 100px;
+      }
+      .succ{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      .success-msg h3 {
+        font-size: 1.1rem;
+      }
+      .success-msg p{
+        font-size: 0.8rem;
+      }
+      @media screen and (max-width: 665px) {
+        .attribution {
+        font-size: 0.6rem;
+      }
+        .container {
+        width: 290px;
+        min-height: 900px;
+      }
+      .entry {
+        flex-direction: column;
+      }
+       #first-name {
+        height: 40px;
+        border-radius: 0.4rem;
+      }
+      #last-name {
+        height: 40px;
+        border-radius: 0.4rem;
+      }
+      #email {
+        width: 243px;
+        height: 40px;
+        border-radius: 0.4rem;
+      }
+      .radio-selects {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .radio-select {
+        border-radius: 0.4rem;
+        width: 243px;
+      }
+      #message {
+        height: 240px;
+        border-radius: 0.4rem;
+      }
+      .checkbox {
+        margin: 2rem 0;
+      }
+      .button {
+        width: 243px;
+        height: 55px;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .success-msg {
+        width: 280px;
+        height: 120px;
+      }
+      .success-msg h3 {
+        font-size: 1rem;
+      }
+      }
